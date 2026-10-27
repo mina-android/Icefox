@@ -1,0 +1,63 @@
+# Changelog
+
+All notable changes to the **Icefox** web browser will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+---
+
+## [1.0.0] - 2026-10-27
+
+### Initial Release: Icefox Zero-Account Edition (Forked from Iceraven Browser)
+
+This initial release establishes **Icefox**, an offline-first, unencumbered fork of Iceraven Browser built on Mozilla GeckoView `158.0.2` and Android Components.
+
+#### 🛡️ Zero-Account & Zero-Sync Architecture
+- **Mozilla Account (FxA) Excision**:
+  - Completely excised `FxaAccountManager`, Mozilla Account login, signup, authentication flows, and QR constellation / device pairing.
+  - Stripped "Sync and save data", "Send tab to device", and account preferences from main menus, navigation graphs, and share sheets.
+- **Sync Engines Disconnected**:
+  - Permanently unbound all Sync engines (`SyncEngine.History`, `SyncEngine.Bookmarks`, `SyncEngine.Passwords`, `SyncEngine.Tabs`, `SyncEngine.CreditCards`, `SyncEngine.Addresses`) from `GlobalSyncableStoreProvider`.
+- **Tabs Tray Streamlining**:
+  - Fixed the Tabs Tray to a clean 2-page or 3-page layout (Normal Tabs, Private Tabs, and optional Tab Groups).
+  - Permanently removed the `SyncedTabs` page, cloud tab sync indicators, and empty-state sync cards.
+
+#### 🔒 Zero-Password & Zero-Autofill Storage
+- **GeckoView Autocomplete Storage Nullified**:
+  - Hardened `GeckoRuntime.autocompleteStorageDelegate` to strictly remain `null`.
+  - Suppressed all engine-level prompts to save credentials, website logins, credit cards, and postal addresses.
+- **Password Manager Excised**:
+  - Disabled `feature-logins`, saved logins preferences, and exception lists. Credential management is delegated to external OS-level autofill providers (e.g. Bitwarden, KeePassDX).
+
+#### 📑 Zero-Bookmarks & Zero-AI Hygiene
+- **Bookmarks Purged**:
+  - Permanently removed bookmark creation buttons, bookmark star toolbar icons, bookmark folders, import/export tools, and settings.
+  - Stripped `bookmarksStorage.warmUp()` from application boot.
+  - Excised bookmarks shortcut (`BOOKMARKS_SEARCH_ENGINE_ID`) from the homepage search shortcuts sheet.
+- **AI Controls & Summarization Removed**:
+  - Permanently disabled and stripped AI page summaries ("shake to summarize"), AI preference toggles, and generative telemetry.
+  - Preserved standard offline page translation.
+
+#### 🎨 Interface Polish & Branding
+- **Icefox Identity & Versioning**:
+  - Rebranded application name to **Icefox** across all system manifests, shortcuts, strings, and settings.
+  - Updated application ID to `com.ma.icefox` and URL schemes to `icefox://` and `icefox-debug://`.
+  - Set application version to `1.0.0` across default configurations and split architecture APK outputs.
+- **Dynamic Wordmark Typography**:
+  - Replaced legacy bitmap wordmarks in `WordmarkAndLogo.kt` with dynamic Jetpack Compose Material 3 typography (`headlineMedium`), adapting crisply to wallpaper palette and theme luminance.
+- **About Dev Section**:
+  - Added dedicated developer attribution items to the top of the About screen:
+    - **Developed by Mina Android** (`https://github.com/mina-android`)
+    - **Source Code (Icefox on GitHub)** (`https://github.com/mina-android/Icefox`)
+    - **Other Projects by Mina Android** (`https://github.com/mina-android`)
+- **Nag Banner & Shortcut Removal**:
+  - Removed "Set as default browser" prompt cards from the 3-dots menu (`MenuDialogFragment.kt`).
+  - Excised default browser onboarding prompts from first-run onboarding (`OnboardingFragment.kt`) and hidden settings toggles.
+  - Removed homepage news / Pocket stories entry button (`showStoriesButton = false`) and no-op'd "Discover More" screen navigation.
+  - Excised the voice typing / search microphone button from both the search toolbar and display toolbar (`shouldShowVoiceSearch = false`).
+
+#### 🧹 Cold-Start Zero-Trace Hygiene
+- **`AccountAndLoginPurge`**:
+  - Introduced startup hygiene task running during cold application boot to actively detect and shred obsolete SQLite database files: `logins.db`, `autofill.db`, `remote_tabs.db`, `pocket.db`, and `bookmarks.db`.
+  - Purged legacy FxA sync tokens and obsolete SharedPreferences keys.
