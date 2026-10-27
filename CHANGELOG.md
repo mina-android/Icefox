@@ -61,3 +61,6 @@ This initial release establishes **Icefox**, an offline-first, unencumbered fork
 - **`AccountAndLoginPurge`**:
   - Introduced startup hygiene task running during cold application boot to actively detect and shred obsolete SQLite database files: `logins.db`, `autofill.db`, `remote_tabs.db`, `pocket.db`, and `bookmarks.db`.
   - Purged legacy FxA sync tokens and obsolete SharedPreferences keys.
+
+#### 🔧 Repository & Build Configuration
+- Added all AI instruction documents (`AGENTS.md`, `AI_INSTRUCTIONS.md`, `CLAUDE.md`, `GEMINI.md`, implementation plans) and `.gitignore` itself to `.gitignore`, keeping internal assistant files local and untracked.
