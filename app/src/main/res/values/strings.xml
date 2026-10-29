@@ -105,8 +105,8 @@
 
     <!-- About content. %1$s is the name of the app (for example "Firefox"). -->
     <string name="about_content" tools:ignore="BrandUsage">%1$s — Zero-Account Privacy Edition</string>
-    <string name="about_developer" translatable="false">Developed by Mina Android</string>
-    <string name="about_source_code" translatable="false">Source code (Icefox on GitHub)</string>
+    <string name="about_developer" translatable="false">Mina Android</string>
+    <string name="about_source_code" translatable="false">Source code</string>
     <string name="about_other_projects" translatable="false">Other projects by Mina Android</string>
 
     <!-- Private Browsing -->

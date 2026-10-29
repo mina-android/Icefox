@@ -70,7 +70,8 @@ flowchart TD
 - **`WordmarkAndLogo.kt`**: Built with Jetpack Compose Material 3 typography (`MaterialTheme.typography.headlineMedium`) and high-contrast dynamic on-surface coloring. Replaces legacy bitmap wordmarks with crisp, scalable typography.
 - **`TabsTray.kt`**: Fixed to a 2-page or 3-page configuration (Normal Tabs, Private Tabs, and optional Tab Groups). The `Page.SyncedTabs` tab page and header indicator are permanently removed.
 - **`MenuDialogFragment.kt`**: Compose-based popup menu. The default browser banner card (`showBanner`) is hardcoded to `false` and `shouldShowMenuBanner` returns `false`.
-- **`AboutFragment.kt`**: Contains direct developer attribution to **Mina Android** and link to the source repository **Icefox** (`https://github.com/mina-android/Icefox`).
+- **`AboutFragment.kt`**: Contains direct developer attribution to **Mina Android** (linking to portfolio `https://portfolio.minaashraf285.workers.dev/`) and link to the source repository **Icefox** (`https://github.com/mina-android/Icefox`).
+- **Adaptive App Icon & Launcher Hygiene**: Configured custom Icefox adaptive icon (`app_icon.png` at 60% canvas safe ratio) and Android 12+ Material Themed Icon (`themed_icon.png`). "App icon" / "Select App Icon" preference category in `customization_preferences.xml` and obsolete `activity-alias` entries in `AndroidManifest.xml` have been excised.
 
 ### 2.4 State & Middleware Pipeline (`org.mozilla.fenix.search`, `org.mozilla.fenix.components.search`)
 - **`ApplicationSearchMiddleware`**: Registers shortcuts for quick filtering. Bookmarks search shortcut (`BOOKMARKS_SEARCH_ENGINE_ID`) is completely removed from the shortcut engine list, leaving exclusively Open Tabs and History.
@@ -99,7 +100,7 @@ IceRaven/
 │   │   │   └── AndroidManifest.xml        # Application package: com.ma.icefox
 │   │   ├── forkDebug/                     # Debug configurations & test manifests
 │   │   └── forkRelease/                   # Release configurations & metadata
-│   └── build.gradle                       # Versioning: 1.0.0, applicationId: com.ma.icefox
+│   └── build.gradle                       # Versioning: 1.0.1, applicationId: com.ma.icefox
 ├── gradle/                                # Gradle wrapper and build cache configuration
 ├── AGENTS.md                              # AI Agent rules & mandatory file sync instructions
 ├── AI_INSTRUCTIONS.md                     # Condensed rules-first guidelines & toolchain stack

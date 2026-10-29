@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.1] - 2026-10-29
+
+### 🎨 Icon Polish & Universal Asset Refresh
+- **Generous Safe-Zone Homescreen Adaptive Icon**:
+  - Scaled adaptive icon foreground artwork (`ic_launcher_foreground.png`) and Android 12+ `<monochrome>` layer (`ic_launcher_monochrome.png`) to **50%** canvas scale, providing ~4.2dp of breathing clearance around the fox ear tips and tail, eliminating edge clipping on all circular, squircle, and OEM launcher masks.
+- **Normal & Standalone Launcher Icon Margins**:
+  - Scaled normal standalone launcher icons inside their circular badges to ~55% diameter (11px margin on 48px base) across all densities (`mdpi`, `hdpi`, `xhdpi`, `xxhdpi`, `xxxhdpi`) ensuring generous breathing room and zero edge cutting.
+- **Icefox Splash Screen Icon**:
+  - Updated `ic_splash_logo` in `forkRelease` and `forkDebug` to display the clean floating Icefox brand mark centered at a compact `72dp × 72dp` on the splash screen background, ensuring the fox ears and contours remain completely unclipped by Android's circular splash mask.
+- **Universal Brand Mark Refresh**:
+  - Updated `ic_wordmark_logo` in `res/drawable-nodpi/` for both `forkRelease` and `forkDebug` with high-resolution Icefox artwork for the homepage header, search widget, and authentication screens.
+  - Updated store and web icons (`ic_launcher-web.png`, `ic_launcher-playstore.png`) with safe margins.
+- **Launcher Bloat Reduction & Manifest Cleanliness**:
+  - Excised all obsolete alternative app icon `<activity-alias>` entries (20+ aliases) from `AndroidManifest.xml` to prevent launcher bloat and unnecessary manifest size.
+  - Excised the "App icon" / "Select App Icon" preference category from `customization_preferences.xml`.
+- **Dynamic Themed Icon & Theme Matching Background**:
+  - Added full Android 12+ Material You Themed Icon (`ic_launcher_monochrome.png`) support for homescreen icon tinting.
+  - Configured adaptive icon background to match theme luminance (`#FFFFFF` in light mode, `#1C1B1F` in dark mode).
+- **Developer Attribution**:
+  - Updated developer profile link in the About screen (`AboutFragment.kt`) to point directly to developer Mina Android's portfolio (`https://portfolio.minaashraf285.workers.dev/`).
+- **Version Bump**:
+  - Bumped application `versionName` to `1.0.1` and `versionCode` to `2` in `app/build.gradle`.
+
+---
+
 ## [1.0.0] - 2026-10-27
 
 ### Initial Release: Icefox Zero-Account Edition (Forked from Iceraven Browser)
@@ -48,9 +73,15 @@ This initial release establishes **Icefox**, an offline-first, unencumbered fork
   - Replaced legacy bitmap wordmarks in `WordmarkAndLogo.kt` with dynamic Jetpack Compose Material 3 typography (`headlineMedium`), adapting crisply to wallpaper palette and theme luminance.
 - **About Dev Section**:
   - Added dedicated developer attribution items to the top of the About screen:
-    - **Developed by Mina Android** (`https://github.com/mina-android`)
-    - **Source Code (Icefox on GitHub)** (`https://github.com/mina-android/Icefox`)
+    - **Mina Android** (`https://portfolio.minaashraf285.workers.dev/`)
+    - **Source code** (`https://github.com/mina-android/Icefox`)
     - **Other Projects by Mina Android** (`https://github.com/mina-android`)
+- **App Icon & Dynamic Theming**:
+  - Replaced legacy launcher icons with a custom Icefox adaptive icon (`app_icon.png`), optimized with calculated safe-zone margins (60% canvas ratio) to ensure zero clipping on circular launcher masks while eliminating excessive blank space.
+  - Implemented Android 12+ homescreen Material You Themed Icon (`themed_icon.png`) via `<monochrome>` layer for dynamic wallpaper and system palette tinting.
+  - Configured adaptive launcher background to match the system theme luminance (`#FFFFFF` in light mode, `#1C1B1F` in dark mode).
+  - Removed "App icon" / "Select App Icon" preference category from Customize Settings.
+  - Excised 20+ obsolete alternative icon `<activity-alias>` entries from `AndroidManifest.xml` to prevent launcher bloat.
 - **Nag Banner & Shortcut Removal**:
   - Removed "Set as default browser" prompt cards from the 3-dots menu (`MenuDialogFragment.kt`).
   - Excised default browser onboarding prompts from first-run onboarding (`OnboardingFragment.kt`) and hidden settings toggles.

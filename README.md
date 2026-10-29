@@ -6,7 +6,7 @@
 
 <h3>A privacy-first Android web browser with zero accounts, zero sync, zero bookmarks, and zero AI</h3>
 
-[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](https://android.com) [![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen)](https://github.com/mina-android/Icefox/releases) [![License](https://img.shields.io/badge/License-MPL--2.0-blue)](LICENSE) [![Fork of](https://img.shields.io/badge/Fork%20of-Iceraven%20Browser-orange)](https://github.com/fork-maintainers/iceraven-browser)
+[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](https://android.com) [![Version](https://img.shields.io/badge/Version-1.0.1-brightgreen)](https://github.com/mina-android/Icefox/releases) [![License](https://img.shields.io/badge/License-MPL--2.0-blue)](LICENSE) [![Fork of](https://img.shields.io/badge/Fork%20of-Iceraven%20Browser-orange)](https://github.com/fork-maintainers/iceraven-browser)
 
 Icefox is an unencumbered, privacy-centric web browser for Android, forked from [**Iceraven Browser**](https://github.com/fork-maintainers/iceraven-browser) (which builds on Mozilla's Fenix and GeckoView engine).  
 All account systems, cloud synchronization, internal password managers, form autofill, bookmarks, AI controls/summaries, and auxiliary cloud services have been permanently excised.
@@ -32,13 +32,13 @@ All account systems, cloud synchronization, internal password managers, form aut
 
 ## 📥 Download
 
-Pre-built standalone APKs for **Version 1.0.0** are available directly on the [**GitHub Releases**](https://github.com/mina-android/Icefox/releases) page:
+Pre-built standalone APKs for **Version 1.0.1** are available directly on the [**GitHub Releases**](https://github.com/mina-android/Icefox/releases) page:
 
 | Architecture | Device Type | APK File |
 |---|---|---|
-| **ARM64 (v8a)** | Modern 64-bit phones & tablets (Recommended) | [`Icefox-v1.0.0-arm64-v8a.apk`](https://github.com/mina-android/Icefox/releases/download/v1.0.0/Icefox-v1.0.0-arm64-v8a.apk) |
-| **ARMv7 (v7a)** | Older 32-bit Android phones | [`Icefox-v1.0.0-armeabi-v7a.apk`](https://github.com/mina-android/Icefox/releases/download/v1.0.0/Icefox-v1.0.0-armeabi-v7a.apk) |
-| **x86_64** | Android emulators & Android-x86 PCs | [`Icefox-v1.0.0-x86_64.apk`](https://github.com/mina-android/Icefox/releases/download/v1.0.0/Icefox-v1.0.0-x86_64.apk) |
+| **ARM64 (v8a)** | Modern 64-bit phones & tablets (Recommended) | [`Icefox-v1.0.1-arm64-v8a.apk`](https://github.com/mina-android/Icefox/releases/download/v1.0.1/Icefox-v1.0.1-arm64-v8a.apk) |
+| **ARMv7 (v7a)** | Older 32-bit Android phones | [`Icefox-v1.0.1-armeabi-v7a.apk`](https://github.com/mina-android/Icefox/releases/download/v1.0.1/Icefox-v1.0.1-armeabi-v7a.apk) |
+| **x86_64** | Android emulators & Android-x86 PCs | [`Icefox-v1.0.1-x86_64.apk`](https://github.com/mina-android/Icefox/releases/download/v1.0.1/Icefox-v1.0.1-x86_64.apk) |
 
 ---
 
@@ -88,7 +88,7 @@ Generated APKs are located at:
 
 ## 👨‍💻 For Developers
 
-- **Developer**: [Mina Android](https://github.com/mina-android)
+- **Developer**: [Mina Android](https://portfolio.minaashraf285.workers.dev/)
 - **Source Code**: [https://github.com/mina-android/Icefox](https://github.com/mina-android/Icefox)
 - **Upstream Origin**: Forked from [Iceraven Browser](https://github.com/fork-maintainers/iceraven-browser) (and Mozilla Fenix / GeckoView).
 - **Contributing & Rules**: Contributors and AI coding assistants must review **[`AGENTS.md`](AGENTS.md)** and **[`AI_INSTRUCTIONS.md`](AI_INSTRUCTIONS.md)** for project-specific rules and mandatory documentation maintenance after every task.

@@ -201,7 +201,7 @@ class AboutFragment(private val toastHandler: ToastHandler = DefaultToastHandler
             AboutPageItem(
                 AboutItem.ExternalLink(
                     DEVELOPER,
-                    "https://github.com/mina-android",
+                    "https://portfolio.minaashraf285.workers.dev/",
                 ),
                 getString(R.string.about_developer),
             ),

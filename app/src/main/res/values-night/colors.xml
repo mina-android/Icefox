@@ -131,4 +131,5 @@
     <color name="mozac_ui_tabcounter_default_text" tools:ignore="UnusedResources">@color/fx_mobile_on_surface</color>
 
     <color name="preference_scroll_highlight">@color/fx_mobile_surface_container_highest</color>
+    <color name="ic_launcher_background">#1C1B1F</color>
 </resources>
