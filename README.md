@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="Icefox Logo" width="120" height="120" style="border-radius: 24px"/>
+<img src="fork-asset-sources/app_icon.png" alt="Icefox Logo" width="120" height="120"/>
 
 <h1>Icefox</h1>
 

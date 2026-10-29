@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Universal Brand Mark Refresh**:
   - Updated `ic_wordmark_logo` in `res/drawable-nodpi/` for both `forkRelease` and `forkDebug` with high-resolution Icefox artwork for the homepage header, search widget, and authentication screens.
   - Updated store and web icons (`ic_launcher-web.png`, `ic_launcher-playstore.png`) with safe margins.
+  - Updated README.md header logo to use the high-resolution master brand asset (`fork-asset-sources/app_icon.png`).
 - **Launcher Bloat Reduction & Manifest Cleanliness**:
   - Excised all obsolete alternative app icon `<activity-alias>` entries (20+ aliases) from `AndroidManifest.xml` to prevent launcher bloat and unnecessary manifest size.
   - Excised the "App icon" / "Select App Icon" preference category from `customization_preferences.xml`.
