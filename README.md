@@ -153,7 +153,10 @@ This project is maintained by **mina-android**, an independent software develope
 
 ## Donate
 
-No external donation or sponsorship platforms are currently configured for this repository.
+Development and ongoing maintenance of this software are independent and self-supported. Financial contributions help support continuous integration infrastructure, testing devices, and hosting costs.
+
+- **PayPal**: [paypal.me/minaashraf285](https://paypal.me/minaashraf285)
+- **GitHub Sponsors**: [github.com/sponsors/mina-android](https://github.com/sponsors/mina-android)
 
 ---
 
