@@ -4,7 +4,7 @@
 
 # Icefox
 
-[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat&logo=android&logoColor=white)](https://developer.android.com) [![Framework](https://img.shields.io/badge/Framework-Kotlin%20%2F%20GeckoView-7F52FF?style=flat&logo=kotlin&logoColor=white)](https://kotlinlang.org) [![Release](https://img.shields.io/badge/Release-v1.0.1-blue?style=flat)](https://github.com/mina-android/Icefox/releases) [![License](https://img.shields.io/badge/License-GPL--3.0-black?style=flat)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat&logo=android&logoColor=white)](https://developer.android.com) [![Framework](https://img.shields.io/badge/Framework-Kotlin%20%2F%20GeckoView-7F52FF?style=flat&logo=kotlin&logoColor=white)](https://kotlinlang.org) [![Release](https://img.shields.io/badge/Release-v1.0.1-blue?style=flat)](https://github.com/mina-android/Icefox/releases) [![License](https://img.shields.io/badge/License-MPL--2.0-black?style=flat)](LICENSE)
 
 <p align="center">
   Icefox is an offline-first Android web browser forked from Iceraven Browser (Mozilla Fenix and GeckoView). All account systems, cloud synchronization, internal password and autofill storage, bookmarks, generative AI controls, and auxiliary cloud services are permanently excised.
@@ -143,9 +143,9 @@ Development and maintenance of this software are independent and self-supported.
 
 ## License
 
-Distributed under the **GNU General Public License v3.0 (GPL-3.0)**. See the [`LICENSE`](LICENSE) file in the root directory for the complete legal text.
+Distributed under the **Mozilla Public License 2.0 (MPL-2.0)**. See the [`LICENSE`](LICENSE) file in the root directory for the complete legal text.
 
 ```text
-Copyright (c) 2026 mina-android
-Licensed under the GNU General Public License v3.0.
+Copyright (c) 2026 mina-android and upstream Mozilla / Iceraven contributors
+Licensed under the Mozilla Public License 2.0 (MPL-2.0).
 ```
