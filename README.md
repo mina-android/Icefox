@@ -4,7 +4,7 @@
 
 # Icefox
 
-[![Platform](https://img.shields.io/badge/Platform-Android-lightgrey.svg?style=flat-square)](https://developer.android.com) [![Latest Release](https://img.shields.io/badge/Release-v1.0.1-blue.svg?style=flat-square)](https://github.com/mina-android/Icefox/releases) [![License](https://img.shields.io/badge/License-MPL--2.0-black.svg?style=flat-square)](https://www.mozilla.org/en-US/MPL/2.0/) [![Fork of](https://img.shields.io/badge/Fork%20of-Iceraven%20Browser-lightgrey.svg?style=flat-square)](https://github.com/fork-maintainers/iceraven-browser)
+[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat&logo=android&logoColor=white)](https://developer.android.com) [![Framework](https://img.shields.io/badge/Framework-Kotlin%20%2F%20GeckoView-7F52FF?style=flat&logo=kotlin&logoColor=white)](https://kotlinlang.org) [![Release](https://img.shields.io/badge/Release-v1.0.1-blue?style=flat)](https://github.com/mina-android/Icefox/releases) [![License](https://img.shields.io/badge/License-GPL--3.0-black?style=flat)](LICENSE)
 
 <p align="center">
   Icefox is an offline-first Android web browser forked from Iceraven Browser (Mozilla Fenix and GeckoView). All account systems, cloud synchronization, internal password and autofill storage, bookmarks, generative AI controls, and auxiliary cloud services are permanently excised.
@@ -16,7 +16,7 @@
 
 ## Navigation
 
-[Features](#features) &bull; [Screenshots](#screenshots) &bull; [Downloads](#downloads) &bull; [Self Building & Local Setup](#self-building--local-setup) &bull; [Frequently Asked Questions](#frequently-asked-questions) &bull; [Contribution](#contribution) &bull; [About the Developer](#about-the-developer) &bull; [Donate](#donate) &bull; [License](#license)
+[Features](#features) &bull; [Screenshots](#screenshots) &bull; [Downloads](#downloads) &bull; [Self Building & Local Setup](#self-building--local-setup) &bull; [Contribution](#contribution) &bull; [About the Developer](#about-the-developer) &bull; [Donate](#donate) &bull; [License](#license)
 
 ---
 
@@ -109,22 +109,6 @@ The output APKs are written to `gradle/build/app/outputs/apk/forkRelease/`.
 
 ---
 
-## Frequently Asked Questions
-
-#### Where does the application store its settings and database?
-On Android, all profile data, GeckoView state, local caches, and preferences are stored inside the application's private sandbox directory (`/data/data/com.ma.icefox/`). No data is synchronized to external servers.
-
-#### Does this application collect telemetry or connect to external servers?
-Mozilla Account, Firefox Sync, Pocket, Relay, and AI telemetry/summarization pipelines are disabled and purged. Outbound requests occur only when navigating to user-requested websites, fetching add-ons/updates from configured AMO collections, or querying the user-selected search engine.
-
-#### Can I run multiple instances concurrently?
-Android enforces a single process per application ID (`com.ma.icefox`). Debug builds use a separate `.debug` suffix (`icefox-debug://` deep links) and can be installed alongside the release build.
-
-#### How do I perform a complete data reset?
-In Android System Settings, open **Apps > Icefox > Storage & cache** and select **Clear storage**, or uninstall the application. On every cold start, `AccountAndLoginPurge` also checks for and removes legacy database files if any remain.
-
----
-
 ## Contribution
 
 Contributions that maintain Icefox's zero-account, zero-sync, zero-bookmarks, zero-password-storage, and zero-AI invariants are welcome. Do not modify `version.txt` away from `158.0.2`, as it pins the GeckoView binary dependency.
@@ -143,28 +127,25 @@ Contributions that maintain Icefox's zero-account, zero-sync, zero-bookmarks, ze
 
 ## About the Developer
 
-This project is maintained by **mina-android**, an independent software developer focused on privacy-hardened Android applications and stripped-down open-source forks.
+This project is authored and maintained by **mina-android**, focused on developing transparent, local-first utilities and privacy-conscious software.
 
-- **Public Code Repository**: [github.com/mina-android](https://github.com/mina-android)
-- **Project Source**: [github.com/mina-android/Icefox](https://github.com/mina-android/Icefox)
-- **Issue Tracker**: [github.com/mina-android/Icefox/issues](https://github.com/mina-android/Icefox/issues)
+[![Portfolio](https://img.shields.io/badge/Portfolio-mina--android-181717?style=flat&logo=cloudflare&logoColor=white)](https://portfolio.minaashraf285.workers.dev/) [![GitHub](https://img.shields.io/badge/GitHub-mina--android-181717?style=flat&logo=github&logoColor=white)](https://github.com/mina-android) [![Issues](https://img.shields.io/badge/Issues-Report%20a%20Bug-181717?style=flat&logo=github&logoColor=white)](https://github.com/mina-android/Icefox/issues)
 
 ---
 
 ## Donate
 
-Development and ongoing maintenance of this software are independent and self-supported. Financial contributions help support continuous integration infrastructure, testing devices, and hosting costs.
+Development and maintenance of this software are independent and self-supported. If this project helps you in your workflow, consider supporting development:
 
-- **PayPal**: [paypal.me/minaashraf285](https://paypal.me/minaashraf285)
-- **GitHub Sponsors**: [github.com/sponsors/mina-android](https://github.com/sponsors/mina-android)
+[![PayPal](https://img.shields.io/badge/PayPal-Donate-00457C?style=flat&logo=paypal&logoColor=white)](https://paypal.me/minaashraf285) [![GitHub Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-Sponsor-EA4AAA?style=flat&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/mina-android) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=flat&logo=kofi&logoColor=white)](https://ko-fi.com/minaashraf285)
 
 ---
 
 ## License
 
-Distributed under the **Mozilla Public License 2.0 (MPL-2.0)** License. See [mozilla.org/en-US/MPL/2.0](https://www.mozilla.org/en-US/MPL/2.0/) for full legal text and conditions.
+Distributed under the **GNU General Public License v3.0 (GPL-3.0)**. See the [`LICENSE`](LICENSE) file in the root directory for the complete legal text.
 
 ```text
-Copyright (c) 2026 mina-android and upstream Mozilla / Iceraven contributors
-Licensed under the MPL-2.0 License.
+Copyright (c) 2026 mina-android
+Licensed under the GNU General Public License v3.0.
 ```

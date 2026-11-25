@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.1] - 2026-10-29
 
+### Changed
+- **README, License & GitHub Releases**: Added GNU General Public License v3.0 (`LICENSE`), updated `README.md` to adopt `README_TEMPLATE.md` (`style=flat` badges, pinned Developer/Donate badge bars, GPL-3.0 license section, FAQs removed), and aligned GitHub release notes (`v1.0.0`–`v1.0.1`) with the `IT-Box` release note format.
+
 ### 🎨 Icon Polish & Universal Asset Refresh
 - **Generous Safe-Zone Homescreen Adaptive Icon**:
   - Scaled adaptive icon foreground artwork (`ic_launcher_foreground.png`) and Android 12+ `<monochrome>` layer (`ic_launcher_monochrome.png`) to **50%** canvas scale, providing ~4.2dp of breathing clearance around the fox ear tips and tail, eliminating edge clipping on all circular, squircle, and OEM launcher masks.
